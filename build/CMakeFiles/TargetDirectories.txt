@@ -1,0 +1,3 @@
+/Users/izabella/desktop/L1/build/CMakeFiles/rebuild_cache.dir
+/Users/izabella/desktop/L1/build/CMakeFiles/edit_cache.dir
+/Users/izabella/desktop/L1/build/CMakeFiles/lucrarea1.dir
