@@ -37,7 +37,9 @@ int main(){
 	b=3;
 	c=4;
 	TriunghiDreptunghic t1(a, b, c);
-	TriunghiDreptunghic t2=t1;
+	TriunghiDreptunghic t2=t1; // copy constructor => functia este stearsa => eroare
+	TriunghiDreptunghic t3;
+	t3 = t1; // copy ass => functia este stearsa => eroare
 
 	std::cout<<"Aria triunghiului 1 dreptunghic este: "<<t1.aria()<<std::endl;
 	t1.display();
