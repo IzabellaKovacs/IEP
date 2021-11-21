@@ -1,5 +1,6 @@
 #include <iostream>
 
+//item 4, 5, 6
 class TriunghiDreptunghic{
 	private:
 		float la, lb, lc;
