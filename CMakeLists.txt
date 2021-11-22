@@ -14,8 +14,8 @@ else()
     if(CMAKE_COMPILER_IS_GNUCXX)
         set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
     endif()    
-endif()    
+endif()   
 
-# Define the executable
-add_executable(${PROJECT_NAME} src/main.cpp)      
-#include_directories(src)
+add_subdirectory(src)
+add_executable(${PROJECT_NAME} main.cpp) 
+target_link_libraries(${PROJECT_NAME} PRIVATE src)

@@ -1,5 +1,5 @@
-CMakeFiles/lucrarea1.dir/src/main.cpp.o: \
-  /Users/izabella/desktop/L1/src/main.cpp \
+src/CMakeFiles/src.dir/TriunghiDreptunghic.cpp.o: \
+  /Users/izabella/Desktop/L1/src/TriunghiDreptunghic.cpp \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/pthread.h \

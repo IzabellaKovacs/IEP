@@ -87,14 +87,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izabella/Desktop/L1/build/CMakeFiles /Users/izabella/Desktop/L1/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/izabella/Desktop/L1/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/izabella/Desktop/L1/build/CMakeFiles /Users/izabella/Desktop/L1/build/src//CMakeFiles/progress.marks
+	cd /Users/izabella/Desktop/L1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/izabella/Desktop/L1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/izabella/Desktop/L1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,68 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/izabella/Desktop/L1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/izabella/Desktop/L1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/izabella/Desktop/L1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named lucrarea1
+# Convenience name for target.
+src/CMakeFiles/src.dir/rule:
+	cd /Users/izabella/Desktop/L1/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/src.dir/rule
+.PHONY : src/CMakeFiles/src.dir/rule
 
-# Build rule for target.
-lucrarea1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lucrarea1
-.PHONY : lucrarea1
-
-# fast build rule for target.
-lucrarea1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lucrarea1.dir/build.make CMakeFiles/lucrarea1.dir/build
-.PHONY : lucrarea1/fast
-
-#=============================================================================
-# Target rules for targets named src
-
-# Build rule for target.
-src: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src
+# Convenience name for target.
+src: src/CMakeFiles/src.dir/rule
 .PHONY : src
 
 # fast build rule for target.
 src/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/build
+	cd /Users/izabella/Desktop/L1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/build
 .PHONY : src/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+TriunghiDreptunghic.o: TriunghiDreptunghic.cpp.o
+.PHONY : TriunghiDreptunghic.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lucrarea1.dir/build.make CMakeFiles/lucrarea1.dir/main.cpp.o
-.PHONY : main.cpp.o
+TriunghiDreptunghic.cpp.o:
+	cd /Users/izabella/Desktop/L1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/TriunghiDreptunghic.cpp.o
+.PHONY : TriunghiDreptunghic.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+TriunghiDreptunghic.i: TriunghiDreptunghic.cpp.i
+.PHONY : TriunghiDreptunghic.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lucrarea1.dir/build.make CMakeFiles/lucrarea1.dir/main.cpp.i
-.PHONY : main.cpp.i
+TriunghiDreptunghic.cpp.i:
+	cd /Users/izabella/Desktop/L1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/TriunghiDreptunghic.cpp.i
+.PHONY : TriunghiDreptunghic.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+TriunghiDreptunghic.s: TriunghiDreptunghic.cpp.s
+.PHONY : TriunghiDreptunghic.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lucrarea1.dir/build.make CMakeFiles/lucrarea1.dir/main.cpp.s
-.PHONY : main.cpp.s
+TriunghiDreptunghic.cpp.s:
+	cd /Users/izabella/Desktop/L1/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/TriunghiDreptunghic.cpp.s
+.PHONY : TriunghiDreptunghic.cpp.s
 
 # Help Target
 help:
@@ -174,11 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... lucrarea1"
 	@echo "... src"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... TriunghiDreptunghic.o"
+	@echo "... TriunghiDreptunghic.i"
+	@echo "... TriunghiDreptunghic.s"
 .PHONY : help
 
 
@@ -190,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/izabella/Desktop/L1/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

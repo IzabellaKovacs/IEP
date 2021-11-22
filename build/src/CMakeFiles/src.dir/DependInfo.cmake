@@ -8,12 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/izabella/Desktop/L1/main.cpp" "CMakeFiles/lucrarea1.dir/main.cpp.o" "gcc" "CMakeFiles/lucrarea1.dir/main.cpp.o.d"
+  "/Users/izabella/Desktop/L1/src/TriunghiDreptunghic.cpp" "src/CMakeFiles/src.dir/TriunghiDreptunghic.cpp.o" "gcc" "src/CMakeFiles/src.dir/TriunghiDreptunghic.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/izabella/Desktop/L1/build/src/CMakeFiles/src.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
